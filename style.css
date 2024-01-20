@@ -1,0 +1,191 @@
+
+        body {
+            margin: 0;
+            font-family: serif;
+	    font-size: 30px;
+        }
+
+        header {
+            background-color: #ffb6c1;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #menuIcon {
+            font-size: 50px;
+            cursor: pointer;
+            color: white;
+        }
+
+        #storeName {
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+	    font-family:cursive;
+        }
+
+        #storeLogo {
+            font-size: 0;
+            cursor: pointer;
+            border-radius: 50%;
+	    width: 50px;
+	    height: 50px;
+	    overflow: hidden;
+        }
+	#storeLogo img {
+	    max-width: 100%;
+	    max-height: 100%;
+	    height: auto;
+	    display: block;
+	}
+
+        #sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #ffb6c1;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        #sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        #sidebar a:hover {
+            color: black;
+        }
+
+        #closeSidebar {
+            font-size: 50px;
+            cursor: pointer;
+            color: white;
+            position: absolute;
+            top: 0;
+            right: 10px;
+        }
+        #shopName{
+        margin-top: 20;
+        display: flex;
+        text-align: center;
+        font-size: 20px;
+        }
+
+        #topPicks {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #ffb6c1; 
+            padding: 20px;
+            width: 300px;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        #closeTP {
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+        }
+
+        #toptItems i {
+            margin-top: 20px;
+            color: white;
+	    text-align:left;
+        }
+        #content {
+            margin-left: 0;
+	    text-align: center;
+        }
+	  #homePage {
+	      font-family: cursive;
+        }
+	   div.ul-cont{
+	       text-align:center;
+	       position:relative;
+        }
+	   ul.ulList{
+	       display:inline-block;
+	       text-align: left;
+        }
+
+        footer {
+	    margin-top:5%;
+            background-color: #ffb6c1;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            color: black;
+	}
+	  footer a {
+	    text-decoration: none;
+	    color:black;
+        }
+	  footer a:hover {
+	    color:white;
+	}
+	  .scroll-cont {
+	       width: 100%;
+	       overflow-x: scroll;
+	       background-color:#FFA7A6;
+	       white-space: nowrap;
+	       padding: 10px;
+	  }
+	  .scroll-img{
+	       display: inline-block;
+	       margin: 5px;
+	  }
+	  footer p:hover{
+	       color: white;
+	  }
+	  .celebrations img{       
+	       height:350%;
+	       width: 35%;
+	       padding: 3%;
+	  }
+	  .paymentOptions img{
+	       height:350%;
+	       width: 55%;
+	       padding: 3%;
+	       margin-bottom:10px;
+	  }
+	  .infoAboutUs {
+	       font-size:30px;
+	       font-family: cursive;
+	       text-align:center;
+	       padding:10px;
+	       margin:80px;80px;
+	       margin-top:20px;	       
+	  }
+	  .tableOfProducts td,table,th{
+	      text-align:center;
+	      padding:20px;
+	      border: 1px solid black;
+	      border-collapse: collapse;
+	      margin-left:170px;
+	      margin-right:80px;
+	  }
+	  .tableOfProducts img{
+	       height:60%;
+	       width: 60%;
+	  }
+	  .tableOfProducts h3{
+	       text-align:center;
+	  }
+	  .ps p {
+	       text-align:center;
+	  }
