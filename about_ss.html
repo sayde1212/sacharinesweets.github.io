@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saccharine Sweets</title>
+    
+</head>
+
+<body>
+
+    <header>
+        <div id="menuIcon" onclick="toggleSidebar()">&#9776;</div>
+        <div id="storeName">Sacharine Sweets</div>
+        <div id="storeLogo" onclick="showTopPicks()"><img src= "storeLogo.jpg" alt"store logo"></div>
+    </header>
+
+    <div id="sidebar">
+    <div id="shopName">
+    <h2>Sacharine Sweets</h2>
+    </div>
+    
+        <div id="closeSidebar" onclick="closeSidebar()">&#10005;</div>
+        <a href="index.html">Home</a>
+        <a href="about_ss.html">About Us</a>
+        <a href="ss_shop.html">Shop</a>
+    </div>
+
+    <div id="topPicks">
+        <div id="closeTP" onclick="closeTopPicks()">&#10005;</div>
+        <h2>Top Picks from our Shop</h2>
+        <div id="topItems">
+	<ol>
+	    <li> Ghibli Cookies </li>
+	    <li> Mochi </li> 
+	    <li> Debut Cakes </li>
+	    <li> Crystal Candies</li> 
+	  <ol>
+	 <hr width="100%" color="black"/>
+	<i>We are located at Mabuhay Street Quezon City</i>
+	<i>Please Visit Us! </i>
+	<br>
+	<br>
+	<b>browse more products in our</b>
+	<a href="ss_shop.html">shop</a>
+           
+        </div>
+    </div>
+	
+	<div class="content">	
+	<div class="infoAboutUs">
+	<h2> ABOUT US </h2>
+	<p>Welcome to Sacharine Sweets, where the art of crafting 
+	delightful confections meets the joy of savoring every sweet moment.
+	Established with a passion for creating exceptional treats, 
+	Sacharine Sweets is your haven for indulging in the finest 
+	handcrafted sweets that promise to ignite your taste buds and 
+	sweeten your day.</p>
+
+	<p>At Sacharine Sweets, we believe that sweetness goes beyond sugar;
+	 it's a celebration of life's beautiful moments.
+	 Our confectionery artisans pour their heart and 
+	expertise into every creation, ensuring that each sweet 
+	reflects the commitment to quality, flavor, and pure joy.</p>
+
+	<p>Our array of delectable offerings ranges from artisanal chocolates
+	 that melt in your mouth to exquisite pastries that are a testament 
+	to the perfect blend of tradition and innovation. 
+	Whether you're craving a classic piece of fudge or eager 
+	to explore our unique flavor infusions, Sacharine Sweets has 
+	something to satiate every sweet desire.</p>
+	</div>
+	</div>
+
+	<footer>
+	<a href="careers.html"> Careers</a>
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	&emsp;
+	<a href="privacy-policy.html"> Privacy Policies </a>
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	&emsp;
+	<a href="faqs.html"> FAQS</a>
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	&emsp;
+	<p> Contact Us </p>
+	<p><u> 09734641829 </u></p>
+	<p> or visit </p>
+	<a href="www.facebok.com">Sacharine Sweets</a>
+	<p>ALL RIGHTS RESERVED 2023</p>
+    </footer>
+
+    <script>
+        function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+            if (sidebar.style.width === '250px') {
+                sidebar.style.width = '0';
+            } else {
+                sidebar.style.width = '250px';
+            }
+        }
+        
+        function closeSidebar() {
+	    const sidebar = document.getElementById('sidebar');
+	    sidebar.style.width = '0';
+        }
+	function showTopPicks() {
+	    const topPicks = document.getElementById('topPicks');
+	    topPicks.style.display = 'block';
+        }
+	
+	function closeTopPicks() {
+	    const topPicks = document.getElementById('topPicks');
+	    topPicks.style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

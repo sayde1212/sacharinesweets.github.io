@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saccharine Sweets</title>
+    
+</head>
+
+<body>
+
+    <header>
+        <div id="menuIcon" onclick="toggleSidebar()">&#9776;</div>
+        <div id="storeName">Sacharine Sweets</div>
+        <div id="storeLogo" onclick="showTopPicks()"><img src= "storeLogo.jpg" alt"store logo"></div>
+    </header>
+
+    <div id="sidebar">
+    <div id="shopName">
+    <h2>Sacharine Sweets</h2>
+    </div>
+    
+        <div id="closeSidebar" onclick="closeSidebar()">&#10005;</div>
+        <a href="index.html">Home</a>
+        <a href="about_ss.html">About Us</a>
+        <a href="ss_shop.html">Shop</a>
+    </div>
+
+    <div id="topPicks">
+        <div id="closeTP" onclick="closeTopPicks()">&#10005;</div>
+        <h2>Top Picks from our Shop</h2>
+        <div id="topItems">
+	<ol>
+	    <li> Ghibli Cookies </li>
+	    <li> Mochi </li> 
+	    <li> Debut Cakes </li>
+	    <li> Crystal Candies</li> 
+	  <ol>
+	<hr width="100%" color="black"/>
+	<i>We are located at Mabuhay Street Quezon City</i>
+	<i>Please Visit Us! </i>
+           
+        </div>
+    </div>
+
+	<div class="content">
+	<div class="tableOfProducts">
+	<h3> SACHARINE SWEETS PRODUCTS INFORMATIONS & PRICES</h3>
+	 <table>
+	  <tr>
+	     <th> Products </th>
+	     <th> Informations </th>
+	     <th> Prices </th>
+	  </tr>
+	<tr>
+	     <td><img src="cupcakes.jpg" alt="product1"></td>
+	     <td> Pastel and elegant cupcakes.
+	         12 pieces per box </td>
+	     <td> &#8369;240.00 </td>
+	  </tr>
+
+	<tr>
+	     <td><img src="debutCakes.jpg" alt="product1"></td>
+	     <td> Customizable, buyer can send reference too.
+		We also do birthday cakes!</td>
+	     <td> &#8369;500-1500.00 </td>
+	  </tr>
+
+	<tr>
+	     <td><img src="macarons2.jpg" alt="product1"></td>
+	     <td> Aesthetically pleasing colors and flavorful fillings  </td>
+	     <td> &#8369;50.00 each, 1000/box</td>
+	  </tr>
+
+	<tr>
+	     <td><img src="ghibliCookieDelight.jpg" alt="product1"></td>
+	     <td> Ghibli cookies! </td>
+	     <td> &#8369;350.00/box </td>
+	  </tr>
+
+	<tr>
+	     <td><img src="crystalCandies.jpg" alt="product1"></td>
+	     <td> Hard candies in crystal form. Very safe to eat
+	        with different flavors too.</td>
+	     <td> &#8369;500.00/box</td>
+	  </tr>
+
+	<tr>
+	     <td><img src="mochi.jpg" alt="product1"></td>
+	     <td> Soft and aesthetic colours,chewy and we also have
+	       variety of fillings.
+	       4 pieces per box</td>
+	     <td> &#8369;200.00/box </td>
+	  </tr>
+
+	<tr>
+	     <td><img src="gummyBento.jpg" alt="product1"></td>
+	     <td> They are gummies shaped in cute bento foods,
+	       boxed like they are Japnese bento. Different contents
+	       for every variety of bento. </td>
+	     <td> &#8369;150.00/bento </td>
+	  </tr>
+
+	<tr>
+	     <td><img src="valentineChoco.jpg" alt="product1"></td>
+	     <td> Sells like crazy during valentines! 
+	      Perfect gift for loved ones. </td>
+	     <td> &#8369;150.00 </td>
+	  </tr>
+
+	<tr>
+	     <td><img src="dango.jpg" alt="product1"></td>
+	     <td> A japanese sweetened glutinous rice flour.
+	        soft, chewable with variety of flavors!
+	        5 sticks per box</td>
+	     <td> &#8369;15.00/stick,70.00/box </td>
+	  </tr>
+
+	<tr>
+	     <td><img src="cookiesCir.jpg" alt="product1"></td>
+	     <td> Regular gigantic cookies. Is just perfect for picnics. </td>
+	     <td> &#8369;50.00 </td>
+	  </tr>
+
+	</table>
+
+	</div>
+	 
+	</div>
+	<div class="ps">
+	<p><em> Please Visit us @Mabuhay Street Quezon City!</em></p>
+	 <p><b> We only do pick-ups, not shipping and delivery yet!</b> </p>
+	<p>PS: We do not own any of the photos used in this mock website. 
+	Mostly are from pinterest, credits to the rightful owners.</p>
+	<br>
+	</div>
+
+	<footer>
+	<a href="careers.html"> Careers</a>
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	&emsp;
+	<a href="privacy-policy.html"> Privacy Policies </a>
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	&emsp;
+	<a href="faqs.html"> FAQS</a>
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	&emsp;
+	<p> Contact Us </p>
+	<p><u> 09734641829 </u></p>
+	<p> or visit </p>
+	<a href="www.facebok.com">Sacharine Sweets</a>
+    </footer>
+
+    <script>
+        function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+            if (sidebar.style.width === '250px') {
+                sidebar.style.width = '0';
+            } else {
+                sidebar.style.width = '250px';
+            }
+        }
+        
+        function closeSidebar() {
+	    const sidebar = document.getElementById('sidebar');
+	    sidebar.style.width = '0';
+        }
+	function showTopPicks() {
+	    const topPicks = document.getElementById('topPicks');
+	    topPicks.style.display = 'block';
+        }
+	
+	function closeTopPicks() {
+	    const topPicks = document.getElementById('topPicks');
+	    topPicks.style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
